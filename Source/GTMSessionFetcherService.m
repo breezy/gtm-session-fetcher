@@ -383,8 +383,8 @@ NSString *const kGTMSessionFetcherServiceSessionKey
     id<NSURLSessionDelegate> fetcherDelegate = fetcherSession.delegate;
     BOOL hasDispatcher = (fetcherDelegate != nil && fetcherDelegate != fetcher);
     if (hasDispatcher) {
-      GTMSESSION_ASSERT_DEBUG([fetcherDelegate isKindOfClass:[GTMSessionFetcherSessionDelegateDispatcher class]],
-                              @"Fetcher delegate class: %@", [fetcherDelegate class]);
+//      GTMSESSION_ASSERT_DEBUG([fetcherDelegate isKindOfClass:[GTMSessionFetcherSessionDelegateDispatcher class]],
+//                              @"Fetcher delegate class: %@", [fetcherDelegate class]);
       return (GTMSessionFetcherSessionDelegateDispatcher *)fetcherDelegate;
     }
   }
